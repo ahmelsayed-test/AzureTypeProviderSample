@@ -1,0 +1,2333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.Azure.StorageTypeProvider</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobContainer.Upload(System.String)">
+<summary>
+ Uploads a file to this container.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobContainer.Download(System.String)">
+<summary>
+ Downloads the entire container contents to the local file system asynchronously.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobContainer.AsCloudBlobContainer(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Gets a handle to the Azure SDK client for this container.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.BlobContainer">
+<summary>
+ Represents a container in blob storage.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.Size">
+<summary>
+ Gets the blob size in bytes.
+</summary>
+</member>
+<member name="P:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.Name">
+<summary>
+ Gets the name of the blob
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.ReadAsync">
+<summary>
+ Reads this file as a string asynchronously.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.Read">
+<summary>
+ Reads this file as a string.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.OpenStreamAsText">
+<summary>
+ Opens this file as a text stream for reading.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.OpenStream">
+<summary>
+ Opens this file as a stream for reading.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.GenerateSharedAccessSignature(System.TimeSpan)">
+<summary>
+ Generates a full-access shared-access signature for the supplied duration.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.Download(System.String)">
+<summary>
+ Downloads this file to the specified path.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFile.AsCloudBlockBlob(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Gets a handle to the Azure SDK client for this blob.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.BlobFile">
+<summary>
+ Represents a file in blob storage.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobFolder.Download(System.String)">
+<summary>
+ Downloads the entire folder contents to the local file system asynchronously.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.BlobFolder">
+<summary>
+ Represents a pseudo-folder in blob storage.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.XmlFile.ReadAsXDocumentAsync">
+<summary>
+ Reads this file as an XDocument asynchronously.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.XmlFile.ReadAsXDocument">
+<summary>
+ Reads this file as an XDocument.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.XmlFile">
+<summary>
+ Represents an XML file stored in blob storage.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.BlobMemberFactory.getBlobStorageMembers(System.String,ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition)">
+<summary>
+ Builds up the Blob Storage container members
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.BlobMemberFactory">
+<summary>
+ Generates top-level blob containers folders.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.BlobRepository">
+<summary>
+Contains reusable helper functions for accessing blobs
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.ContainerBuilder.createBlobFolder(System.String,System.String,System.String)">
+<summary>
+ Creates a blob folder object.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.ContainerBuilder.createContainer(System.String,System.String)">
+<summary>
+ Creates a blob container object.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Blob.ContainerBuilder.createBlobFile(System.String,System.String,System.String)">
+<summary>
+ Creates a blob file object.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.ContainerBuilder">
+<summary>
+ Builder methods to construct blobs etc..
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Blob.ProvidedTypeGenerator">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.MessageId">
+<summary>
+ The unique identifier for this Azure queue message.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.PopReceipt">
+<summary>
+ The unique identifier for this request of this Azure queue message.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.ProvidedMessageId">
+<summary>
+ The composite identifier of this Azure queue message.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.Name">
+<summary>
+ Gets the name of the queue.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.UpdateMessage(FSharp.Azure.StorageTypeProvider.Queue.ProvidedMessageId,System.Byte[],Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Updates the visibility and the binary contents of an existing message. If no timeout is provided, the update is immediately visible.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.UpdateMessage(FSharp.Azure.StorageTypeProvider.Queue.ProvidedMessageId,System.String,Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Updates the visibility and the string contents of an existing message. If no timeout is provided, the update is immediately visible.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.UpdateMessage(FSharp.Azure.StorageTypeProvider.Queue.ProvidedMessageId,System.TimeSpan,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Updates the visibility of an existing message.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.GetCurrentLength(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Gets the queue length.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.GenerateSharedAccessSignature(System.TimeSpan,Microsoft.FSharp.Core.FSharpOption{System.DateTime},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Generates a full-access shared access signature, defaulting to start from now.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.Enqueue(System.Byte[],Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Enqueues a new message.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.Enqueue(System.String,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Enqueues a new message.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.Dequeue(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Dequeues the next message.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.DeleteMessage(FSharp.Azure.StorageTypeProvider.Queue.ProvidedMessageId,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Deletes an existing message.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.Clear(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Clears the queue of all messages.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueue.AsCloudQueue(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Gets a handle to the Azure SDK client for this queue.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueueMessage.Id">
+<summary>
+ The composite key of this message, containing both the message id and the pop receipt.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.ProvidedQueueMessage">
+<summary>
+ Represents a single message that has been dequeued.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.Async">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.Factory">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.QueueBuilder">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Queue.QueueMemberFactory.getQueueStorageMembers(System.String,ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition)">
+<summary>
+ Builds up the Table Storage member
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.QueueMemberFactory">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Queue.QueueRepository">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Azure.StorageTypeProvider.Table.AzureTable.Name">
+<summary>
+ Gets the name of the table.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.AzureTable.Insert``1(FSharp.Azure.StorageTypeProvider.Table.Partition,FSharp.Azure.StorageTypeProvider.Table.Row,``0,Microsoft.FSharp.Core.FSharpOption{FSharp.Azure.StorageTypeProvider.Table.TableInsertMode},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Inserts a single entity into the table, using public properties on the object as fields.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.AzureTable.Insert``1(System.Collections.Generic.IEnumerable{System.Tuple{FSharp.Azure.StorageTypeProvider.Table.Partition,FSharp.Azure.StorageTypeProvider.Table.Row,``0}},Microsoft.FSharp.Core.FSharpOption{FSharp.Azure.StorageTypeProvider.Table.TableInsertMode},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Inserts a batch of entities into the table, using all public properties on the object as fields.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.AzureTable.Delete(System.Collections.Generic.IEnumerable{System.Tuple{FSharp.Azure.StorageTypeProvider.Table.Partition,FSharp.Azure.StorageTypeProvider.Table.Row}},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Deletes a batch of entities from the table using the supplied pairs of Partition and Row keys.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.AzureTable.AsCloudTable(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Gets a handle to the Azure SDK client for this table.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.AzureTable">
+<summary>
+ Represents a Table in Azure.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.EntityId">
+<summary>
+ Represents a Partition and Row combined to key a single entity.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.LightweightTableEntity">
+<summary>
+ Represents a single table entity.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.Partition">
+<summary>
+ The name of the partition.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.Row">
+<summary>
+ The row key.
+</summary>
+</member>
+<member name="F:FSharp.Azure.StorageTypeProvider.Table.TableInsertMode.Upsert">
+<summary>
+ Insert if the entity does not already exist; otherwise overwrite the entity.
+</summary>
+</member>
+<member name="F:FSharp.Azure.StorageTypeProvider.Table.TableInsertMode.Insert">
+<summary>
+ Insert if the entity does not already exist.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableInsertMode">
+<summary>
+ The different types of insertion mechanism to use.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableResponse.BatchError">
+<summary>
+ An unknown error occurred in this batch.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableResponse.BatchOperationFailedError">
+<summary>
+ The operation for this specific entity was not carried out because an operation for another entity in the same batch failed.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableResponse.EntityError">
+<summary>
+ The operation for this specific entity failed.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableResponse.SuccessfulResponse">
+<summary>
+ The operation was successful.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableResponse">
+<summary>
+ Different responses from a table operation.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableBuilder.createAzureTable(System.String,System.String)">
+<summary>
+ Creates an Azure Table object.
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableBuilder">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableEntityMemberFactory.buildTableEntityMembers(ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition,ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition,ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition,System.String,System.String)">
+<summary>
+ Gets all the members for a Table Entity type
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableEntityMemberFactory.setPropertiesForEntity``1(ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition,``0)">
+<summary>
+ Sets the properties on a specific entity based on the inferred schema from the sample provided
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableEntityMemberFactory.buildEdmParameter``1(Microsoft.WindowsAzure.Storage.Table.EdmType,Microsoft.FSharp.Core.FSharpFunc{System.Type,``0})">
+<summary>
+ builds a single EDM parameter
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableEntityMemberFactory.buildEntityProperty``1(System.String)">
+<summary>
+ Builds a property for a single entity for a specific type
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableEntityMemberFactory">
+<summary>
+ Responsible for creating members on an individual table entity.
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableMemberFactory.getTableStorageMembers(System.String,ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition)">
+<summary>
+ Builds up the Table Storage member
+</summary>
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableMemberFactory">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableQueryBuilder.createTableQueryType``1(ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition,``0,System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty}})">
+<summary>
+ Creates a query property (and child methods etc.) for a given entity
+</summary>
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableQueryBuilder.buildPropertyOperatorsType(System.String,System.String,Microsoft.WindowsAzure.Storage.Table.EdmType,System.Type)">
+<summary>
+ Generates strongly-type query provided properties for an entity property e.g. Equal, GreaterThan etc. etc.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableQueryBuilder">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Azure.StorageTypeProvider.Table.TableRepository.getTables(System.String)">
+<summary>
+ Gets all tables
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Table.TableRepository">
+<summary>
+Contains helper functions for accessing tables
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Azure.StorageTypeProvider.Utils">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:ProviderImplementation.AzureTypeProvider">
+<summary>
+ The type provider for connecting to Azure Storage.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:ProviderImplementation.ProvidedTypes.AssemblyGenerator.Generate(Microsoft.FSharp.Collections.FSharpList{System.Tuple{ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}}}})">
+<summary>
+ Emit the given provided type definitions into an assembly and adjust &apos;Assembly&apos; property of all type definitions to return that
+ assembly.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition.MakeParametricType(System.String,System.Object[])">
+<summary>
+ Instantiate parametrics type
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition.GetStaticParameters">
+<summary>
+ Get ParameterInfo[] for the parametric type parameters (//s GetGenericParameters)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition.DefineStaticParameters(Microsoft.FSharp.Collections.FSharpList{ProviderImplementation.ProvidedTypes.ProvidedStaticParameter},Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Object[],ProviderImplementation.ProvidedTypes.ProvidedTypeDefinition}})">
+<summary>
+ Abstract a type to a parametric-type. Requires &quot;formal parameters&quot; and &quot;instantiation function&quot;.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:ProviderImplementation.ProvidedTypes.ProvidedSymbolType.DeclaringType">
+<summary>
+ Although not strictly required by the type provider specification, this is required when doing basic operations like FullName on
+ .NET symbolic types made from this type, e.g. when building Nullable&lt;SomeProvidedType[]&gt;.FullName
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:ProviderImplementation.ProvidedTypes.ProvidedSymbolType">
+<summary>
+ Represents an array or other symbolic type involving a provided type as the argument.
+ See the type provider spec for the methods that must be implemented.
+ Note that the type provider specification does not require us to implement pointer-equality for provided types.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:ProviderImplementation.ProvidedTypes.SymbolKind">
+<summary>
+ Represents the type constructor in a provided symbol type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:ProviderImplementation.ProvidedTypes.Local">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:ProviderImplementation.ProvidedTypes.GlobalProvidedAssemblyElementsTable">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:ProviderImplementation.ProvidedTypes.Misc.mkXmlDocCustomAttributeDataLazy(System.Lazy{System.String})">
+<summary>
+ This makes an xml doc attribute w.r.t. an amortized computation of an xml doc string.
+ It is important that the text of the xml doc only get forced when poking on the ConstructorArguments
+ for the CustomAttributeData object.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:ProviderImplementation.ProvidedTypes.Misc">
+
+</member>
+</members>
+</doc>
